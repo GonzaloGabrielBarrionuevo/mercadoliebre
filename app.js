@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 
 // Levantamos nuestro servidor para que escuche peticiones al puerto 3000
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('Servidor funcionando');
 });
 
